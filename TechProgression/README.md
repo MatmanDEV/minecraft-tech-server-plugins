@@ -26,7 +26,6 @@ Designed for:
 ## Features
 
 - Built-in Technology Shop GUI
-- No DeluxeMenus dependency
 - Technology categories generated automatically from config
 - Money-based research using Vault
 - Item-based research
