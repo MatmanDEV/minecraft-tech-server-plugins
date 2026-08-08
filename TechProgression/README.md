@@ -1,165 +1,92 @@
 # TechProgression
 
-A lightweight progression plugin for Minecraft 1.21.1 that locks crafting recipes, workstations and technologies behind research purchased with an economy or special item requirements.
+TechProgression is a configurable progression plugin for Minecraft 1.21.1.
 
-Designed for survival servers that want a long-term progression system without requiring mods.
+It lets server owners lock crafting recipes, workstations, tools, armor, and other technologies behind research unlocks.
+
+Players gather resources, earn money, and purchase technologies through a built-in GUI.
+
+No client-side mods are required.
+
+---
+
+## Current Version
+
+**TechProgression 2.4.0**
+
+Designed for:
+
+- Minecraft 1.21.1
+- Java 21
+- Bukkit / Spigot-compatible servers
+- Arclight 1.21.1
 
 ---
 
 ## Features
 
-- Technology research system
-- Economy integration (Vault)
-- Item requirement research (End Research)
+- Built-in Technology Shop GUI
+- No DeluxeMenus dependency
+- Technology categories generated automatically from config
+- Money-based research using Vault
+- Item-based research
+- Multiple prerequisites per technology
 - Recipe locking
 - Workstation locking
-- LuckPerms integration
-- PlaceholderAPI support
-- DeluxeMenus compatible
-- Fully configurable
-- No client-side mods required
+- Player-specific progression
+- LuckPerms permission synchronization
+- Persistent progression storage
+- Configurable technology icons
+- Configurable prices
+- Configurable technology requirements
+- Admin testing commands
+- End-game research system
+
+---
+
+## Gameplay Loop
+
+Players:
+
+1. Gather resources
+2. Sell resources for money
+3. Open the Technology Shop
+4. Purchase research
+5. Unlock better tools and equipment
+6. Gain access to more valuable resources
+7. Continue progressing through the technology tree
+8. Complete End Research
+9. Unlock Eye of Ender crafting
+10. Reach The End
 
 ---
 
 ## Requirements
 
-- Minecraft 1.21.1
-- Java 21
-- Vault
-- LuckPerms
-- Economy plugin compatible with Vault
-
-Optional
-
-- PlaceholderAPI
-- DeluxeMenus
-
----
-
-## Technologies
-
-Current default technologies include
-
-### Tools
-
-- Stone & Gold Equipment
-- Iron Tools
-- Diamond Tools
-- Netherite Tools
-
-### Armor
-
-- Leather Armor
-- Iron Armor
-- Diamond Armor
-- Netherite Armor
-
-### Utility
-
-- Shield
-- Buckets
-- Shears
-
-### Magic
-
-- Enchanting
-- Smithing
-- Advanced Enchanting
-
-### Brewing
-
-- Brewing
-
-### Redstone
-
-- Redstone Engineering
-- Advanced Redstone
-
-### Storage
-
-- Barrels
-- Ender Chest
-- Shulker Boxes
-
-### End Game
-
-- End Research
-
-End Research unlocks Eye of Ender crafting by sacrificing rare items instead of paying money.
-
----
-
-## Commands
-
-| Command | Description |
-|----------|-------------|
-| /techshop | Opens the technology menu |
-| /techbuy <technology> | Purchase a technology |
-| /techstatus [technology] | View progression |
-| /techunlock <player> <technology> | Admin unlock |
-| /techreset <player> <technology> | Admin reset |
-| /techreload | Reload configuration |
-
----
-
-## Permissions
-
-```
-techprogression.admin
-techprogression.bypass
-tech.<technology>
-```
-
-Example
-
-```
-tech.iron_tools
-tech.diamond_tools
-tech.enchanting
-tech.end_research
-```
-
----
-
-## Configuration
-
-Everything is configured inside
-
-```
-plugins/TechProgression/config.yml
-```
-
-Each technology supports
-
-- Display name
-- Cost
-- Item requirements
-- Required technologies
-- Permission
-- Locked items
-
-Example
-
-```yaml
-diamond_tools:
-  cost: 15000
-  requires: iron_tools
-  permission: tech.diamond_tools
-```
-
----
-
-## Compatible Plugins
+Required:
 
 - Vault
+- A Vault-compatible economy provider
+
+Recommended:
+
 - LuckPerms
-- PlaceholderAPI
+
+TechProgression does not require:
+
 - DeluxeMenus
-- TAB
+- KubeJS
+- Rhino
+- Architectury
+- Client-side mods
 
 ---
 
-## License
+## Installation
 
-Personal project.
-Feel free to modify for your own server.
+1. Stop the Minecraft server.
+
+2. Place:
+
+```text
+TechProgression-2.4.0.jar
