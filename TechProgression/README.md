@@ -74,12 +74,6 @@ Recommended:
 
 TechProgression does not require:
 
-- DeluxeMenus
-- KubeJS
-- Rhino
-- Architectury
-- Client-side mods
-
 ---
 
 ## Installation
