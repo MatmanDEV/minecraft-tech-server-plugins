@@ -79,13 +79,6 @@ TechProgression does not require:
 
 1. Stop the Minecraft server.
 
-2. Place:
+2. Place "TechProgression-2.4.0.jar" inside your plugins folder.
 
-```text
-TechProgression-2.4.0.jar
-```
-inside:
-
-plugins/
-
-3. Start the server.
+3. Start your server to generate the config files.
