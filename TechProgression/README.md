@@ -83,3 +83,9 @@ TechProgression does not require:
 
 ```text
 TechProgression-2.4.0.jar
+```
+inside:
+
+plugins/
+
+3. Start the server.
